@@ -1,9 +1,10 @@
 import streamlit as st
 import requests
 from datetime import datetime, timedelta, date
+import base64
 
 # ----------------- PAGE SETUP -----------------
-st.set_page_config(page_title="Smart Farming Partner", page_icon="🌾", layout="wide")
+st.set_page_config(page_title=" - Smart Farming Partner", page_icon="🌾", layout="wide")
 
 # ----------------- WEATHER API -----------------
 def get_weather_from_coords(lat, lon):
@@ -32,7 +33,7 @@ with st.sidebar:
     city = st.text_input("🌍 Enter Your City (for Weather)")
 
 # ----------------- MAIN TITLE -----------------
-st.title("🌱 Smart Farming Partner")
+st.title("🌱  – Your Smart Farming Partner")
 st.markdown("#### Making intelligent, location-based, and crop-specific farming decisions.")
 st.markdown("---")
 
@@ -155,4 +156,4 @@ if upload:
 
 # ----------------- FOOTER -----------------
 st.markdown("---")
-st.caption("🚀 Built with ❤️ using Streamlit | Smart Farming Partner 2025")
+st.caption("🚀 Built with ❤️ using Streamlit | Project – Smart Agriculture 2025")
