@@ -149,7 +149,7 @@ st.markdown("---")
 st.subheader("📸 Weed Detection & Pesticide Advice")
 upload = st.file_uploader("Upload weed image (jpg/png)", type=["jpg","jpeg","png"])
 if upload:
-    st.image(upload, caption="Uploaded Image", use_container_width=True)
+    st.image(upload, caption="Uploaded Image", use_column_width=True)
     st.warning("Detected weed: *General Broadleaf Weed*")
     st.info("Suggested pesticide: Glyphosate or 2,4-D")
 
